@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/redondo"
+    android:gravity="center|bottom"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Proceso"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="end|center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="end"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:orientation="vertical"
+        android:rowCount="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <Button
+                android:id="@+id/Porcenaje"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="%"
+                android:textSize="30sp"
+                android:background="@drawable/boton_redondeado"
+                android:layout_marginTop="20dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Parentesis"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="()"
+                android:textSize="30sp"
+                android:background="@drawable/boton_redondeado"
+                android:layout_marginTop="20dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Limpiar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="c"
+                android:onClick="Limpiar"
+                android:textSize="30sp"
+                android:background="@drawable/boton_redondeado"
+                android:layout_marginTop="20dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Borrar"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:paddingStart="30sp"
+                android:background="@drawable/igual"
+                android:onClick="Borrar"
+                android:textSize="50sp"
+                android:drawableStart="@drawable/ic_backspace_black_24"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+
+                android:layout_marginTop="20dp">
+            </Button>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <Button
+                android:id="@+id/Siete"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="7"
+                android:textSize="30sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Ocho"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:textSize="30sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Nueve"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="9"
+                android:textSize="30sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Multiplicar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="x"
+                android:textSize="30sp"
+                android:background="@drawable/boton_redondeado"
+                android:layout_marginTop="20dp">
+
+            </Button>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+            <Button
+                android:id="@+id/Cuatro"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:textSize="30sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Cinco"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:textSize="30sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Seis"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:textSize="30sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Dividir"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="÷"
+                android:textSize="30sp"
+                android:background="@drawable/boton_redondeado"
+                android:layout_marginTop="20dp">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <Button
+                android:id="@+id/Uno"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textSize="30sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Dos"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:textSize="30sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Tres"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:textSize="30sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Sumar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="30sp"
+                android:background="@drawable/boton_redondeado"
+                android:layout_marginTop="20dp">
+
+            </Button>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <Button
+                android:id="@+id/Punto"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="."
+                android:textSize="30sp"
+                android:background="@drawable/boton_redondeado"
+                android:layout_marginTop="20dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Cero"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="30sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Igual"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="="
+                android:onClick="Igual"
+                android:textSize="30sp"
+                android:background="@drawable/igual"
+                android:layout_marginTop="20dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Restar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="30sp"
+                android:background="@drawable/boton_redondeado"
+                android:layout_marginTop="20dp">
+
+            </Button>
+
+        </LinearLayout>
+
+    </GridLayout>
+</LinearLayout>
